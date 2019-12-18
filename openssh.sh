@@ -1,4 +1,4 @@
-INSTANCE_NAME=win-2016-openssh-vm2
+INSTANCE_NAME=win-2016-openssh-vm
 ZONE=us-central1-a
 
 gcloud compute instances create $INSTANCE_NAME \
