@@ -50,6 +50,9 @@ if (-not($hasOpenSSHD)) {
     Write-EventLog -LogName Application -Source "OpenSSH Installation" -EntryType Information -EventID 8 -Message "Installation Completed."
     Write-Output "Done!!!!!!!"
 
+    Write-Output "Restarting..."
+    Restart-Computer -Force
+
 } else {
     Write-EventLog -LogName Application -Source "OpenSSH Installation" -EntryType Information -EventID 9 -Message "OpenSSH is already installed"
 }
